@@ -1,0 +1,28 @@
+.css-1kb96s2-Wrapper {
+  height: 36px !important;
+  background: rgb(30, 13, 38) !important;
+}
+
+.css-1kb96s2-Wrapper > * {
+  display: none !important;
+}
+
+.css-1tctk84-TimerFormWrapper-raised20-block {
+  top: 36px !important;
+}
+
+.css-19k6azv-ExpandedArea {
+  display: none !important;
+}
+
+.css-w1geeq-Root-sunken10 {
+  display: none !important;
+}
+
+[data-heap-id="timer-page-list"] {
+  padding-top: 32px !important;
+}
+
+[data-heap-id="start-focus-mode"] {
+  display: none !important;
+}

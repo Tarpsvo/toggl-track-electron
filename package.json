@@ -1,0 +1,17 @@
+{
+  "name": "toggl-track-electron",
+  "version": "0.0.1",
+  "description": "An electron wrapper for Toggl Track's website.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "npx electron-packager . \"Toggl Track\" --platform=darwin --arch=universal --out=build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tarvo Reinpalu (tarvoreinpalu@gmail.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-packager": "^17.1.2"
+  }
+}
