@@ -1,5 +1,6 @@
 const { app, BrowserWindow, session, Menu } = require("electron");
 const fs = require("fs");
+const path = require("path");
 
 const BLOCKED_URLS = [
   "intercom",
@@ -18,6 +19,7 @@ const BLOCKED_URLS = [
 
 const createWindow = () => {
   const win = new BrowserWindow({
+    icon: "./toggl-track.png",
     title: "Toggl Track",
     width: 1000,
     height: 768,
@@ -26,13 +28,12 @@ const createWindow = () => {
     movable: true,
   });
 
-  win.loadURL("https://track.toggl.com");
-  win.setTitle("Toggl Track");
-
-  const css = fs.readFileSync("./override.css", { encoding: "utf-8" });
-  win.webContents.on("did-navigate", (event) => {
-    win.webContents.insertCSS(css);
+  const css = fs.readFileSync(path.resolve(__dirname, "override.css"), {
+    encoding: "utf-8",
   });
+  win.webContents.on("did-navigate", () => win.webContents.insertCSS(css));
+
+  win.loadURL("https://track.toggl.com");
 
   // win.webContents.openDevTools({ mode: "detach" });
 };

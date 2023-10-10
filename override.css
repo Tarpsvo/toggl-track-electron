@@ -1,6 +1,7 @@
 .css-1kb96s2-Wrapper {
   height: 36px !important;
   background: rgb(30, 13, 38) !important;
+  -webkit-app-region: drag;
 }
 
 .css-1kb96s2-Wrapper > * {
