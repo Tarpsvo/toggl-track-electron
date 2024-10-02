@@ -8,6 +8,10 @@
   display: none !important;
 }
 
+.css-1heyfjn-TimerFormWrapper-raised20-block {
+  top: 32px !important;
+}
+
 [data-heap-id="timer-page-list"] > *:first-child {
   top: 36px !important;
 }
@@ -26,4 +30,16 @@
 
 [data-heap-id="start-focus-mode"] {
   display: none !important;
+}
+
+.css-15yhcka-MainContainer-blockShadow {
+  display: none !important;
+}
+
+.css-fz2jzs-MainContainer-blockShadow {
+  display: none !important;
+}
+
+.css-1yxfyt7-Page-EnhancedPage-EnhancedPage {
+  padding-top: 90px !important;
 }

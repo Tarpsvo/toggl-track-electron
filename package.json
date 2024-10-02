@@ -1,6 +1,6 @@
 {
   "name": "toggl-track-electron",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An electron wrapper for Toggl Track's website.",
   "main": "main.js",
   "scripts": {
